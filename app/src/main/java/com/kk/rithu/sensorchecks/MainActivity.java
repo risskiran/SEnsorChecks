@@ -70,6 +70,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 //        accelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
 //        magnetometer = mSensorManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD);
 
+        Toast.makeText(getBaseContext(), "onCreate", Toast.LENGTH_SHORT).show();
         Intent i=new Intent(getApplicationContext(),ShakeService.class);
         startService(i);
 
